@@ -37,50 +37,53 @@
   <div class="nav-grid">
     <nav>
       <div>
-        <img class="logo" src="images/logoo.png">
+        <a href = "index.html"><img class="logo" src="images/logoo.png"></a>
       </div>
 
       <ul class="list">
-        <li class="projects"><a href="#">PROJECTS</a></li>
-        <li class="about"><a href="#">ABOUT</a></li>
-        <li class="resume"><a href="#">RESUME</a></li>
+        <a href = "sightseer.html"><li class="projects">PROJECTS</li></a>
+        <a href="about.html"><li class = "about">ABOUT</li></a>
+        <a href= "KimberlyNguyenResume1.pdf" target="_blank"><li class = "resume">RESUME</li></a>
       </ul>
     </nav>
   </div>
 
 <div class = "main-container" >
-  <div>
-    <p class = "project-title">Sightseer<span style="color:#E47239">.</span></p>
-    <p class = "project-subtitle">Created mobile tourist app to bridge the gap betweens locals and tourists.</p>
-  </div>
+  <div class = "top-container" >
+    <div>
+      <p class = "project-title">Sightseer<span style="color:#E47239">.</span></p>
+      <p class = "project-subtitle">Created mobile tourist app to bridge the gap betweens locals and tourists.</p>
+    </div>
+  
+    <div class = "four-intro-section-grid">
+      <div>
+        <p class = "about-project">Role</p>
+        <p class = "about-info">UX Designer</p>
+      </div> 
+      <div>
+        <p class = "about-project">Team</p>
+        <p class = "about-info">Ellie Kwon <br> Maciej Czapnik <br> Kimberly Nguyen </p>
+      </div>
+      <div>
+        <p class = "about-project">Timeline</p>
+        <p class = "about-info">40 hours <br> 2023 Catalyst Designathon - BU FORGE Design Studio</p>
+      </div>
+      <div>
+        <p class = "about-project">Skills</p>
+        <p class = "about-info"> Figma <br> Slack</p>
+      </div>
+    </div>
+  
+    <div class = "img-box">
+      <img class="large-thumbnail" src ="images/lthumbnail1.png">
+    </div>
 
-  <div class = "four-intro-section-grid">
-    <div>
-      <p class = "about-project">Role</p>
-      <p class = "about-info">UX Designer</p>
-    </div> 
-    <div>
-      <p class = "about-project">Team</p>
-      <p class = "about-info">Ellie Kwon <br> Maciej Czapnik <br> Kimberly Nguyen </p>
-    </div>
-    <div>
-      <p class = "about-project">Timeline</p>
-      <p class = "about-info">40 hours <br> 2023 Catalyst Designathon - BU FORGE Design Studio</p>
-    </div>
-    <div>
-      <p class = "about-project">Skills</p>
-      <p class = "about-info"> Figma <br> Slack</p>
-    </div>
-  </div>
-
-  <div class = "img-box">
-    <img class="large-thumbnail" src ="images/lthumbnail1.png">
   </div>
   <div class = "skip-final-designs">
     <p class="text-under-thumbnail">Skip to Final Designs</p>
     <div class ="button-under" style = "justify-content: center;
     display:flex;">
-      <button class="buttons">Final Designs</button>  
+      <a href = "#finaldesigns"><button class="buttons">Final Designs</button>  </a>
     </div>
   </div>
   
@@ -89,8 +92,8 @@
   <div class = "left">
     <div class = "sidenav">
       <ul>
-        <li style="margin-bottom:2.5rem;"> <a href="#home">Home</a></li>
-        <li> <a href="#context">Context</a></li>
+        <li style="margin-bottom:2.5rem;"> <a href="index.html">Home</a></li>
+        <a href="#context"><li>Context</li></a>
         <li><a href="#problem">Problem</a></li>
         <li><a href="#solution">Solution</a></li>
         <li><a href="#contribution">Contribution</a></li>
@@ -147,22 +150,50 @@
         <p class = "caption-under-img">User Flow</p>
       </p>
 
-      <h3 class = "section" id ="finalsdesigns">Final Designs</h3>
+      <h3 class = "section" id ="finaldesigns">Final Designs</h3>
       <h1 class = "section-title">Introducing Sightseer !</h1>
       <p  class = "section-paragraph">The go to app for locals and tourists to connect.</p>
       <img class="big-img" style = " margin-top: -56px; " src= "images/Sightseer google play app store.png">
-      <div class = "gif-grid"  >
+      <div class = "gif-grid-right"  >
         <div class = "gif-text">
           <p class = "gif-title">Find a tour with intent</p>
           <p class = "gif-caption">Whether you like a specific tour style or only have time for a half day, walking, or time of day, the filter system will help you find those tours.</p>
         </div >
         <div ><img class="section-gif" src ="images/sightseergif1.gif"></div>
       </div>
-      <div class = "gif-grid"  >
-        <div ><img class="section-gif" src ="images/sightseergif1.gif"></div>
+      <div class = "gif-grid-left"  >
+        <div ><img class="section-gif" src ="images/sightseergif2.gif" style = "padding-right: 100px;"></div>
         <div class = "gif-text">
-          <p class = "gif-title">Find a tour with intent</p>
-          <p class = "gif-caption">Whether you like a specific tour style or only have time for a half day, walking, or time of day, the filter system will help you find those tours.</p>
+          <p class = "gif-title">Browse curated tours</p>
+          <p class = "gif-caption">Browse a list of curated, filtered tours, flag favorites, meet your tour guide.</p>
+        </div >
+      </div>
+      <div class = "gif-grid-right"  >
+        <div class = "gif-text">
+          <p class = "gif-title">Seamless checkout process</p>
+          <p class = "gif-caption">Ready for your tour? Checkout Now.</p>
+        </div >
+        <div ><img class="section-gif" src ="images/sightseergif3.gif"></div>
+      </div>
+      <div class = "gif-grid-left"  >
+        <div ><img class="section-gif" src ="images/sightseergif4.gif" style = "padding-right: 100px;"></div>
+        <div class = "gif-text">
+          <p class = "gif-title">Tour overview</p>
+          <p class = "gif-caption">Directions, duration, distance: all in the tour overview.</p>
+        </div >
+      </div>
+      <div class = "gif-grid-right"  >
+        <div class = "gif-text">
+          <p class = "gif-title">Follow along on our integrated map</p>
+          <p class = "gif-caption">No need to switch between Google Maps and Sightseer, we got you covered with an accessible map with directions.</p>
+        </div >
+        <div ><img class="section-gif" src ="images/sightseergif55.gif"></div>
+      </div>
+      <div class = "gif-grid-left"  style = "margin-bottom: 5rem;" >
+        <div ><img class="section-gif" src ="images/sightseer6.gif" style = "padding-right: 100px;"></div>
+        <div class = "gif-text">
+          <p class = "gif-title">Review / Rating</p>
+          <p class = "gif-caption">Give your favorite tour guide a review!</p>
         </div >
       </div>
 
@@ -190,5 +221,18 @@
 </div>
 <div class ="button-under" style = "justify-content: center;
 display:flex;">
-<button class="buttons">Back to Homepage</button>  </div>
+<a href="index.html"><button class="buttons">Back to Homepage</button></a></div>
+<footer1 class = "footer1">
+  <div style= "display: flex;
+  align-items: center;">
+    <a href = "index.html"><img class = "logo" src="images/logoo.png"></a>
+    <p class = "footer-logo">Designed and Coded by Kimberly Nguyen<span style=" color:#e47239">.</span> </p>
+  </div>
+
+  <ul class = "footer-list">
+    <a href="https://www.linkedin.com/in/kimberlynguyen01/" target="_blank"><li class="linkedin-footer">LINKEDIN</li></a>
+    <a href="mailto:mhc.kimberly@gmail.com" target="_blank"><li class = "email-footer">EMAIL</li></a>
+    <a href="KimberlyNguyenResume1.pdf" target="_blank"><li class = "resume-footer" >RESUME</li></a>
+  </ul>
+</footer1>
 

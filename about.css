@@ -1,6 +1,15 @@
+html {
+	scroll-behavior:smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 body{
   padding:20px 50px 0 50px;
-  background-color: #fffff6;
+  background-color: #fffff697;
+
 }
 
 .about-flex {

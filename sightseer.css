@@ -1,16 +1,11 @@
-/* .leftside {
-  max-width: 380px;
-  width: 100%;
+html {
+	scroll-behavior:smooth;
 }
-
-#sidebar.sticky{
-  float: none;
-  position: fixed;
-  top:20px;
-  z-index:6;
-  left:auto;
-
-} */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 body {
   /* max-width: 100%; */
@@ -256,7 +251,7 @@ body {
   margin-right: 50px;
 }
 
-.gif-grid {
+.gif-grid-right {
   display:grid;
   grid-template-columns: 2fr 2fr;
   margin-top: 20px;
@@ -265,6 +260,15 @@ body {
   align-items: center;
   margin-left: -100px;
 
+}
+.gif-grid-left{
+  display:grid;
+  grid-template-columns: 2fr 2fr;
+  margin-top: 20px;
+  column-gap: 80px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -100px;
 
 }
 
