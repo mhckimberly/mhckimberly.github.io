@@ -1,0 +1,179 @@
+body{
+  padding:20px 50px 0 50px;
+  background-color: #fffff6;
+}
+
+.about-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:80px;
+  justify-content: space-between;
+  column-gap: 65px;
+  
+}
+.line1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #1a1b1f;
+}
+
+.line2 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 56px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #1a1b1f;
+  margin: 30px 0 30px ;
+}
+.line3 {
+  margin-bottom: 20px;
+}
+.line3 , 
+.line4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #1a1b1f;
+
+}
+
+.portrait2 {
+  border-radius: 27px;
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  object-position: 50% 70%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.20);
+}
+
+.how-i-design {
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+  font-weight: 300;
+  margin-top: 123px;
+  margin-bottom: 50px;
+}
+.design-style{
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  border-color: #ccc;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 15px; 
+  padding: 20px;
+}
+
+.design-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+h3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #1a1b1f;
+}
+
+p2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #1a1b1f;
+
+}
+
+.designstyle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-color: #ccc;
+  border-width: 2px;
+  border-style: dashed;
+  border-radius: 15px; 
+  padding: 20px;
+}
+
+footer1 {
+  height:40px;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+footer1 ul{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  list-style: none;
+  display: flex;
+  color: #535457;
+  
+}
+
+footer1 li {
+  padding-left: 3rem;
+}
+
+footer1 a {
+  text-decoration: none;
+  color: #535457;
+
+}
+
+.footer1-logo {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  list-style: none;
+  color: #535457;
+  padding-left: 20px;
+
+  
+}
+
+
+.hobbies-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.hobbie-style{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-color: #ccc;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    padding-bottom:0; 
+}
+
+.hobbie-pic {
+
+  margin-right:25px;
+  width: 300px;
+  height:300px;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+  max-height: 100%;
+align-items: stretch;
+
+
+}
