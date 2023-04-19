@@ -114,7 +114,7 @@ p2 {
   padding: 20px;
 }
 
-footer1 {
+.footer1 {
   height:40px;
   display: flex;
   flex-direction: row;
@@ -125,7 +125,7 @@ footer1 {
   margin-bottom: 60px;
 }
 
-footer1 ul{
+.footer1 ul{
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -134,12 +134,15 @@ footer1 ul{
   color: #535457;
   
 }
+.footer1 li:hover {
+  color:#e47239;
+}
 
-footer1 li {
+.footer1 li {
   padding-left: 3rem;
 }
 
-footer1 a {
+.footer1 a {
   text-decoration: none;
   color: #535457;
 
@@ -186,3 +189,4 @@ align-items: stretch;
 
 
 }
+
