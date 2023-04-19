@@ -35,6 +35,13 @@ body {
   font-weight:700;
   
 }
+.p-link:hover {
+  color:#e47239;
+}
+.p-link {
+  color:black;
+}
+
 .about-info {
   font-size: 15px;
   line-height:28px;
@@ -43,6 +50,8 @@ body {
   font-weight:400;
   
 }
+
+
 
 .four-intro-section-grid {
   display:grid;
