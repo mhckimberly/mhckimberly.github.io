@@ -31,8 +31,8 @@
 
   </head>
   <body>
-  <script src = "ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js "></script>
-  <script src = "stickySidbar.js"></script>
+    <script src = "ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js "></script>
+    <script src = "stickySidbar.js"></script>
 <div class = "top-part">
   <div class="nav-grid">
     <nav>
@@ -93,15 +93,15 @@
     <div class = "sidenav">
       <ul>
         <li style="margin-bottom:2.5rem;"> <a href="index.html">Home</a></li>
-        <a href="#context"><li>Context</li></a>
-        <li><a href="#problem">Problem</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#contribution">Contribution</a></li>
-        <li><a href="#goals">Goals</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#ideation">Ideation</a></li>
-        <li><a href="#finaldesigns">Final Designs</a></li>
-        <li><a href="#learnings">Learnings</a></li>
+        <li><a href="#context" class="nav-link">Context</a></li>
+        <li><a href="#problem" class="nav-link">Problem</a></li>
+        <li><a href="#solution" class="nav-link">Solution</a></li>
+        <li><a href="#contribution" class="nav-link">Contribution</a></li>
+        <li><a href="#goals" class="nav-link">Goals</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#ideation" class="nav-link">Ideation</a></li>
+        <li><a href="#finaldesigns" class="nav-link">Final Designs</a></li>
+        <li><a href="#learnings" class="nav-link">Learnings</a></li>
       </ul>
     </div>
   </div>
@@ -131,10 +131,10 @@
 
       <h3 class = "section" id ="research">Research</h3>
       <h1 class = "section-title">Understanding the market & users</h1>
-      <p  class = "section-paragraph">
+      <div>
         <img class="section-img" src ="images/User Personas.jpg">
         <p class = "caption-under-img">User Personas</p>
-      </p>
+      </div>
 
 
       <h3 class = "section" id ="ideation">Ideation</h3>
@@ -145,10 +145,10 @@
           <div class="div3"><img class="section-img-grid" src ="images/DESIGN INSPIRATION.png">  </div>
         </div> -->
       </h1>
-      <p  class = "section-paragraph">
+      <div>
         <img class="section-img" src ="images/User Flow.jpg">
         <p class = "caption-under-img">User Flow</p>
-      </p>
+      </div>
 
       <h3 class = "section" id ="finaldesigns">Final Designs</h3>
       <h1 class = "section-title">Introducing Sightseer !</h1>
@@ -212,6 +212,31 @@
 </div>
 </div>
 
+<script>
+  // Get all navigation links
+  const navLinks = document.querySelectorAll('.sidenav li a.nav-link');
+
+  // Add click event listener to each link
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+
+      // Remove the 'active' class from all links
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+
+      // Add the 'active' class to the clicked link
+      this.classList.add('active');
+
+      // Scroll to the target section
+      const targetId = this.getAttribute('href');
+      const targetSection = document.querySelector(targetId);
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
+
 
 
 </body>
@@ -235,4 +260,6 @@ display:flex;">
     <a href="KimberlyNguyenResume1.pdf" target="_blank"><li class = "resume-footer" >RESUME</li></a>
   </ul>
 </footer1>
+
+
 
